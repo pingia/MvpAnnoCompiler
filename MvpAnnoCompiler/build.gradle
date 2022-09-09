@@ -1,8 +1,11 @@
 plugins {
     id 'java-library'
+    id 'maven-publish'
 }
 
-
+apply plugin: 'java-library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.pingia'
 
 
 sourceCompatibility = JavaVersion.VERSION_1_7
